@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disparto - Destinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #4CAF50;
+        }
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .destination {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            margin-bottom: 20px;
+        }
+        .destination img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .destination-content {
+            padding: 15px;
+        }
+        .destination h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .destination p {
+            margin: 0;
+            color: #666;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .destination {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .destination {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <section id="destinations">
+            <h2>Destinations</h2>
+            <div class="destinations">
+                <div class="destination">
+                    <img src="https://example.com/oran.jpg" alt="Oran">
+                    <div class="destination-content">
+                        <h3>Oran</h3>
+                        <p>Découvrez la beauté côtière d'Oran, avec ses plages magnifiques, son architecture française et son ambiance vibrante. Un mélange parfait de culture et de détente.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://example.com/sidi-bel-abbes.jpg" alt="Sidi Bel Abbès">
+                    <div class="destination-content">
+                        <h3>Sidi Bel Abbès</h3>
+                        <p>Explorez Sidi Bel Abbès, connue pour ses magnifiques paysages et son riche patrimoine culturel. Un endroit idéal pour les amateurs de nature et d'histoire.</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://example.com/alger.jpg" alt="Alger">
+                    <div class="destination-content">
+                        <h3>Alger</h3>
+                        <p>Visitez Alger, la capitale dynamique de l'Algérie, avec ses monuments historiques, sa Casbah fascinante et ses vues spectaculaires sur la Méditerranée.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disparto - Activités</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f2029;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #ffeba7;
+        }
+        .activities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .activity {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            margin-bottom: 20px;
+        }
+        .activity img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .activity-content {
+            padding: 15px;
+        }
+        .activity h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .activity p {
+            margin: 0;
+            color: #666;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .activity {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .activity {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <section id="activities">
+            <h2>Activités</h2>
+            <div class="activities">
+               
+                <div class="activity">
+                    <img src="img/decorat.jpg" alt="Organisation de Fêtes">
+                    <div class="activity-content">
+                        <h3>Organisation de Fêtes</h3>
+                        <p>Laissez-nous organiser vos fêtes, qu'il s'agisse de petites réunions intimes ou de grandes célébrations. Nous nous occupons de tous les détails pour que vous puissiez profiter pleinement.</p>
+                    </div>
+                </div>
+                <div class="activity">
+                    <img src="img/birthday.jpg" alt="Anniversaires">
+                    <div class="activity-content">
+                        <h3>Anniversaires</h3>
+                        <p>Célébrez votre anniversaire avec style. Nous proposons des lieux et des services qui rendront votre journée spéciale inoubliable.</p>
+                    </div>
+                </div>
+                <div class="activity">
+                    <img src="img/bride.jpg" alt="Mariages">
+                    <div class="activity-content">
+                        <h3>Mariages</h3>
+                        <p>Planifiez le mariage de vos rêves avec nous. De la cérémonie à la réception, nous nous assurons que chaque détail est parfait pour votre journée spéciale.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
